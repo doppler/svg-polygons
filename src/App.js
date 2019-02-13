@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Polygon from "./Polygon";
 import "./App.css";
 
 const App = () => {
@@ -6,21 +7,7 @@ const App = () => {
   const handleHueSliderChange = event => setBaseHue(Number(event.target.value));
   return (
     <div id="App">
-      <svg
-        height="500"
-        width="500"
-        style={{ backgroundColor: `hsl(${baseHue}, 100%, 50%)` }}
-      >
-        <polygon
-          points="100,10 40,198 190,78 10,78 160,198"
-          style={{
-            stroke: `hsl(${baseHue + 180}, 100%, 50%)`,
-            fill: `hsl(${baseHue + 120}, 100%, 50%)`,
-            strokeWidth: 5,
-            fillRule: "nonzero"
-          }}
-        />
-      </svg>
+      <Polygon {...{ baseHue }} />
       <input
         type="range"
         value={baseHue}
