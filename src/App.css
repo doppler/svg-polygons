@@ -5,6 +5,6 @@
   color: #eee;
 }
 
-svg {
-  background-color: goldenrod;
+input[type="range"] {
+  width: 100%;
 }
