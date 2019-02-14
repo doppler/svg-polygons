@@ -1,6 +1,6 @@
 import React from "react";
 
-const Polygon = ({ vertices = 5 }) => {
+const Polygon = ({ vertices }) => {
   const size = 500;
   const h = size / 2;
   const k = size / 2;
