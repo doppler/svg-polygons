@@ -1,6 +1,6 @@
 import React from "react";
 
-const Polygon = ({ baseHue, vertices = 5 }) => {
+const Polygon = ({ vertices = 5 }) => {
   const size = 500;
   const h = size / 2;
   const k = size / 2;
@@ -22,14 +22,13 @@ const Polygon = ({ baseHue, vertices = 5 }) => {
     <svg
       height={size}
       width={size}
-      style={{ backgroundColor: `hsl(${baseHue}, 100%, 50%)` }}
+      style={{ backgroundColor: `hsl(60, 100%, 50%)` }}
     >
       <polygon
-        // points="100,10 40,198 190,78 10,78 160,198"
         points={verticesPoints()}
         style={{
-          stroke: `hsl(${baseHue + 180}, 100%, 50%)`,
-          fill: `hsl(${baseHue + 120}, 100%, 50%)`,
+          stroke: `hsl(240, 100%, 50%)`,
+          fill: `hsl(180, 100%, 50%)`,
           strokeWidth: 5,
           fillRule: "nonzero"
         }}
