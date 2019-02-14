@@ -3,6 +3,9 @@
   height: 100vh;
   background-color: #222;
   color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 input[type="range"] {
